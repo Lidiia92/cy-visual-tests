@@ -1,0 +1,31 @@
+{
+	"name": "cy-visual-tests",
+	"version": "1.0.0",
+	"description": "Visual refression testing using cypress",
+	"main": "index.js",
+	"scripts": {
+		"cy:open": "cypress open",
+		"cy:run": "cypress run"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Lidiia92/cy-visual-tests.git"
+	},
+	"keywords": [
+		"cypress",
+		"visual",
+		"testing",
+		"snapshots"
+	],
+	"author": "Lidiia Gallagher",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Lidiia92/cy-visual-tests/issues"
+	},
+	"homepage": "https://github.com/Lidiia92/cy-visual-tests#readme",
+	"dependencies": {
+		"cypress": "^4.4.1",
+		"cypress-image-snapshot": "^3.1.1",
+		"prettier": "^2.0.5"
+	}
+}
