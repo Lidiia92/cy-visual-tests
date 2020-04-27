@@ -15,3 +15,10 @@ describe('Visual Regression', () => {
 		});
 	});
 });
+
+describe('Single element snapshot', () => {
+	it('should match a signle element on a webpage', () => {
+		cy.visit(pages[0]);
+		cy.get('h1').matchImageSnapshot();
+	});
+});
