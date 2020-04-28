@@ -8,7 +8,8 @@
 		"cy:run-tests": "cypress run",
 		"cy:update-snapshots": "cypress run --env updateSnapshots=true",
 		"cy:run-tests-with-reporter": "cypress run --reporter cypress-image-snapshot/reporter",
-		"cy:run-tests-with-no-failure": "cypress run -env failOnSnapshotDiff=false"
+		"cy:run-tests-with-no-failure": "cypress run -env failOnSnapshotDiff=false",
+		"cy:percy": "set PERCY_TOKEN=4d4d3c33e3bfcba54dd6cdac7bc895692331ecf5020690c2d68cdb7015e47bc9 && percy exec -- cypress run --spec='cypress/integration/percy.spec.js'"
 	},
 	"repository": {
 		"type": "git",
@@ -27,6 +28,7 @@
 	},
 	"homepage": "https://github.com/Lidiia92/cy-visual-tests#readme",
 	"dependencies": {
+		"@percy/cypress": "^2.3.1",
 		"cypress": "^4.4.1",
 		"cypress-image-snapshot": "^3.1.1",
 		"prettier": "^2.0.5"
